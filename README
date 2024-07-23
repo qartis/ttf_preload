@@ -1,0 +1,13 @@
+ttf_preload is a utility to allow a program to use a font without having to
+install the font system-wide. Under normal circumstances it's much better to
+just install the font system-wide.
+
+Usage: ttf_preload /path/to/myfont.ttf inkscape
+
+Notes:
+- This program actually preloads the entire directory of fonts into fontconfig.
+If you absolutely need to only add a single font file without also adding other
+font files found in the same directory, you will need to move your font to a
+directory by itself.
+
+- This program can also preload OTF files.
